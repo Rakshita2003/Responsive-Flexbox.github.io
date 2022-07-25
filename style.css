@@ -1,0 +1,113 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper>* {
+    background: black;
+    padding: 10px; 
+    /* margin: 10px; */
+    flex: 1 100%;
+    border-radius: 10px;
+    border: 10px solid black;
+    border-radius: 0px;
+}
+
+.header {
+    background: greenyellow;
+    height: 120px;
+}
+
+.header2 {
+    background-color: black;
+    color: aliceblue;
+    height:120px ;
+}
+.footer {
+    background: greenyellow;
+    height: 80px;
+}
+
+.main {
+    text-align: left;
+    background: black;
+    color: whitesmoke;
+    height: 300px;
+    font-size: 24px;
+} 
+
+.aside1 {
+    background: pink;
+    height: 480px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aside2 {
+    background: pink;
+    height: 480px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aside3 {
+    background: pink;
+    height: 480px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aside4 {
+    background: pink;
+    height: 480px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .sidebar {
+    background: white;
+} */
+
+@media all and (min-width: 800px){
+    /* .main{
+        flex: 6;
+    } */
+    
+    .aside1{
+        order: 1;
+    }
+
+    .aside2{
+        order: 2;
+    }
+
+    .aside3{
+        order: 3;
+    }
+
+    .aside4{
+        order: 4;
+    }
+
+    .main{
+        order: 5;
+    }
+
+    .footer{
+        order: 6;
+    }
+}
+
+@media all and (min-width:600px){
+    .aside {
+        flex: 3;
+    }
+    
+}
+
+@media (max-width: 475px){
+    .main {
+        display: none;
+    }
+}
